@@ -1,25 +1,47 @@
 :root {
-  -body-bg-color: #22212C;
+  --body-bg-color: #22212C;
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
 
-  font-family: 'Poppins', sans-serif;
-}
+ font-family: 'Merriweather Sans', sans-serif;}
 
-body {
+* {  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
 
-
-  background-color: #22212C;
+body { 
+  background-color: var(--body-bg-color);
 
   display: grid;
   grid-template-areas: "aside main" "footer footer";
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
 
   color: var(--text-color);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a, small {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 500;
 }
 
 .card {
@@ -27,18 +49,40 @@ body {
   margin-bottom: 30px;
   padding: 30px 20px;
   border-radius: 20px;
+
+  width: 100%;
 }
 
 
 aside {
   grid-area: aside;
   padding: 40px 40px 30px 30px;
+  width: 400px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+#avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#avatar .avatar {
+  border: #00FF00 2px solid;
+  margin-bottom: 30px;
+}
+
 
 main {
   grid-area: main;
   padding: 40px 40px 0 30px;
+  width: -webkit-fill-available;
 }
+
 
 footer {
   grid-area: footer;
