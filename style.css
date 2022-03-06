@@ -1,12 +1,36 @@
 :root {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-
   -body-bg-color: #22212C;
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
 
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+
+  background-color: #22212C;
+
+  display: grid;
+  grid-template-areas: "aside main" "footer footer";
+  grid-template-columns: .5fr 1fr;
+}
+
+aside {
+  grid-area: aside;
+  padding: 40px 40px 30px 30px;
+}
+
+main {
+  grid-area: main;
+  padding: 40px 40px 0 30px;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
 }
