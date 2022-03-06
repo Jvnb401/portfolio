@@ -103,6 +103,16 @@ aside {
   height: 120%;
 }
 
+ul {
+  margin: 10px 0 0 40px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+
 
 main {
   grid-area: main;
