@@ -18,6 +18,7 @@ body {
   display: grid;
   grid-template-areas: "aside main" "footer footer";
   grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 50px;
   justify-items: center;
 
   color: var(--text-color);
@@ -30,6 +31,14 @@ body {
 a {
   text-decoration: none;
   color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card a:last-child {
+  margin: 0;
 }
 
 a, small {
@@ -50,7 +59,7 @@ p {
   padding: 30px 20px;
   border-radius: 20px;
 
-  width: 100%;
+  width: min(100%, 80vw);
 }
 
 
