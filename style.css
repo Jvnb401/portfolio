@@ -85,6 +85,24 @@ aside {
   margin-bottom: 30px;
 }
 
+.tec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "title title title";
+  gap: 15px;
+}
+
+.tec h2 {
+  grid-area: title;
+}
+
+.tag {
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  text-align: center;
+  height: 120%;
+}
+
 
 main {
   grid-area: main;
