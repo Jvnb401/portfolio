@@ -121,6 +121,17 @@ main {
 }
 
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "projects-header projects-header";
+  column-gap: 30px;
+}
+.cards .card:first-child {
+  grid-area: projects-header;
+}
+
+
 footer {
   grid-area: footer;
   text-align: center;
