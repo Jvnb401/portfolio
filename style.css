@@ -135,6 +135,35 @@ main {
   align-items: center;
 }
 
+.cards #project a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.project-header {
+  grid-area: header;
+
+  display: flex;
+  align-items: center;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.projreview {
+  grid-area: review;
+}
+
+.linguage {
+  grid-area: linguage;
+}
+
 
 footer {
   grid-area: footer;
