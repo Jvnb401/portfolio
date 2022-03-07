@@ -162,6 +162,19 @@ main {
 
 .linguage {
   grid-area: linguage;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  border: 5px solid;
+  border-radius: 50%;
+  height: 0;
+}
+.CSS {
+  border-color: #673ab7;
+}
+.HTML {
+  border-color: #f00;
 }
 
 
