@@ -59,7 +59,7 @@ p {
   padding: 30px 20px;
   border-radius: 20px;
 
-  width: min(100%, 80vw);
+  width: min(100%, 95vw);
 }
 
 
@@ -168,4 +168,33 @@ main {
 footer {
   grid-area: footer;
   text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 90vw;
+    padding: 40px 0 0 0;
+  }
+
+  main {
+    width: 90vw;
+    padding: 40px 0 0 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    width: 75%;
+    margin: 25px 0;
+  }
 }
