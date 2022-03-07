@@ -129,6 +129,10 @@ main {
 }
 .cards .card:first-child {
   grid-area: projects-header;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
