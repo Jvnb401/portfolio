@@ -211,12 +211,3 @@ footer {
     margin: 25px 0;
   }
 }
-
-
-@media (max-width: 800px){
-    main{
-        margin-top: 10vh;
-        flex-direction: column;
-        gap: 50px;
-    }
-}
